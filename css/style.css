@@ -1,0 +1,402 @@
+@font-face 
+{
+    font-family:"AnironC";
+    src:url("../police/anicb___.ttf") format("truetype");
+}
+@font-face
+{
+    font-family: "party business";
+    src:url("../police/partybusiness.ttf") format("truetype");
+}
+@font-face
+{
+    font-family: "Tengwar";
+    src:url("../police/tngan.ttf")
+}
+
+body
+{
+    margin-left: 10%;
+    margin-right: 10%;
+    background-image: url("/img/bg_light.png");
+    font-family: "party business", sans-serif;
+}
+.main-container
+{
+   background-image: url("../img/bg_light.png");
+}
+h1, h2, h3
+{
+    font-family: "AnironC", sans-serif;
+}
+.sep-nav
+{
+    font-family: sans-serif;
+}
+.symbol-text
+{
+    font-family: "Tengwar";
+    color: #ff7c00;
+}
+
+.color-orange
+{
+    color: #e98126;
+}
+/******** Header ***********/
+.main-logo
+{
+    width: 150px;
+}
+
+.header-nav{
+    background-color: #e98126;
+    padding-left: 0;
+}
+
+.nav-header-container{
+    padding-left: 0;
+}
+.nav-header-list{
+    justify-content: space-between;
+    white-space: nowrap;
+}
+
+.nav-header-list li a, li
+{
+    color: white;
+    margin-right: 5px;
+}
+
+.img-carousel
+{
+    width: 100%;
+}
+.fellows-title{
+    margin-top: 20px;
+    margin-left: 2%;
+    font-size: 0.9em;
+}
+.fellow_nav_box ul
+{ 
+    justify-content:space-evenly;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding-right: 0;
+}
+/*****************************/
+/****** Carousel *************/
+/*****************************/
+.text-carousel
+{
+   padding-bottom: 0;
+   top: 30%;
+   bottom:30%;
+   text-align: left;
+}
+
+/*****************************/
+/********** Pills ************/
+/*****************************/
+.pill-list-item
+{
+    background-color: #ffffff00;
+    color: #616161;
+}
+.pill-list-item a 
+{
+    display: none;
+}
+.pill-list-item:hover
+{
+    text-decoration: none;
+    color: #e98126;
+}
+
+.symbol-pills
+{
+    visibility: hidden;
+}
+
+.pill-list-item:active .symbol-pills
+{
+    visibility: visible;
+}
+.pill-list-item:active 
+{
+    text-decoration: underline #e98126;
+}
+/*****************************/
+/********* Fellow ************/
+/*****************************/
+.fellow_card
+{
+    background-color: black;
+    padding: 2px;
+    min-width: 250px; 
+    margin-bottom: 20px;
+}
+
+.fellow_cards_box
+{
+    justify-content: space-evenly;
+}
+
+.container__info
+{
+    position: absolute;
+    background-color: #ffffff94;
+    border-radius: 10px;
+    text-align: center;
+    width: 70%;
+    margin-left: 15%;
+    margin-top: 15%;
+
+}
+
+.container__info p
+{
+    font-size: 1.5em;
+    color: black;
+    margin-bottom: 0;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.fellow-name,
+.fellow-name-gimli
+{
+    position: absolute;
+    color: white;
+    font-size: 2em;
+    top: 40%;
+     
+}
+.fellow-name
+{
+    left: 30%; 
+}
+.fellow-name-gimli
+{
+    text-decoration: line-through #e98126;
+    left: 40%;
+}
+.strike
+{
+
+}
+.fellow-dead
+{
+    position: absolute;
+    font-size: 2em;
+    font-weight: 900;
+    border-radius: 10px;
+    text-align: center;
+    width: 40%;
+    margin-left: 30%;
+    margin-top: 17%;
+    color: #e98126;
+}
+
+.fellow-img
+{
+    border: 1px solid black;
+    opacity: 0.5;
+
+}
+.fellow-text-box{
+    color: #adadad;
+    text-align: justify;
+}
+
+/***** Card Hover effect *****/
+.fellow-img:hover ~ .container__info
+{
+    display: none;
+}
+.fellow-img:hover ~ .fellow-name
+{
+    display: none;
+}
+.fellow-img:hover ~ .fellow-name-gimli
+{
+    display: none;
+}
+.fellow-img:hover ~ .fellow-dead
+{
+     display: none;
+}
+.fellow-img:hover
+{
+    opacity: 1;
+}
+
+
+/*****************************/
+/********** Reward ************/
+/*****************************/
+.reward_img
+{
+   width: 100%; 
+   align-self: center;
+}
+
+.reward-section
+{
+    background-image: url("../img/bg_dark.png");
+    text-align: center;
+}
+
+.reward-section h2, .reward-section p
+{
+    text-align: left;
+}
+.reward__container h2
+{
+    margin-top: 20px;
+    color:#d2d2d2;
+    font-size: 1em;
+}
+
+.reward__container p
+{
+    color: #adadad;
+    justify-content: space-around;
+}
+
+.reward_img
+{
+    width: 100%; 
+    margin-top: 10px; 
+    margin-bottom: 10px;
+}
+.reward_button
+{
+    background-color:white;
+    border: 1px solid #e98126;
+    color: #e98126;
+    margin-top: 20px;
+    margin-bottom: 20px;
+ 
+}
+
+.reward_button:hover
+{
+    background-color:#e98126;
+    border: 1px solid #e98126;
+    color: #000000;
+
+}
+.media
+{
+    margin-bottom: 20px;
+}
+.media-body h3
+{
+    font-size: 15px;
+    font-weight: 800;
+    margin-bottom: 0;
+}
+.media-body p
+{
+    margin-bottom: 0;
+}
+.media-buttom
+{
+    width: 50%;
+    font-size: 10px;
+    font-weight: 900;
+    margin-top: 0;
+    border-radius: 5px;
+}
+/*****************************/
+/********** Ring *************/
+/*****************************/
+.ring-table
+{
+    border: 1px solid gray;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.ring-hearder-card
+{
+    background-color: #d8d8d8;
+}
+
+.ring-img
+{
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.ring__WhyContainer
+{
+    margin-top: 20px;
+    width: 100%;
+
+}
+
+.ring-card-awesome
+{
+    display: flex;
+    flex-direction: row;
+}
+
+/*****************************/
+/********** Join US **********/
+/*****************************/
+.join__container
+{
+    justify-content: space-around;
+    margin-bottom: 20px;
+    width: 100%
+}
+.join__container img
+{
+    margin-top: 20px;
+}
+.join__container p
+{
+    margin-top: 20px;
+    text-align: justify;
+}
+.join-button
+{
+    margin-top: 20px;
+}
+
+/*****************************/
+/*********** Footer **********/
+/*****************************/
+footer
+{
+
+    background-color: #e98126;
+    width: 100%;
+    padding: 10px;
+}
+
+footer a
+{
+    color: white;
+}
+
+.footer__list
+{
+    display: flex;
+    justify-content: space-around;
+}
+.footer__list ul li
+{
+    list-style: none;
+}
+
+.footer-link
+{
+    text-align: center;   
+}
